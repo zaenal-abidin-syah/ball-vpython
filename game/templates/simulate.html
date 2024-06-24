@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vpython</title>
+    <style>
+      .glowscript {
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 70%; */
+        /* background-color: blue; */
+      }
+      .canvas {
+        border: 1px solid black;
+        /* flex */
+        display: flex;
+        /* set center */
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <!-- add static file in static folder -->
+    <link rel="stylesheet" href="{% static 'ide.css' %}" />
+    <link rel="stylesheet" href="{% static 'ide2.css' %}" />
+    <link rel="stylesheet" href="{% static 'jquery-ui.custom.css' %}" />
+  </head>
+  <body>
+    <div class="canvas">
+      <div id="glowscript" class="glowscript"></div>
+    </div>
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <script src="{% static 'RScompiler.3.2.min.js' %}"></script>
+    <script src="{% static 'RSrun.3.2.min.js' %}"></script>
+    <script src="{% static 'jquery.mousewheel.js' %}"></script>
+    <script src="{% static 'editor.js' %}"></script>
+    <script src="{% static 'editor2.js' %}"></script>
+    <script src="{% static 'glow.3.2.min.js' %}"></script>
+    <script src="{% static 'NimbusRomNo9L_Med_otf_serif.js' %}"></script>
+    <script src="{% static 'Roboto_Medium_ttf_sans.js' %}"></script>
+    <script src="{% static 'split2.min.js' %}"></script>
+    <script src="{% static 'symbols.3.2.min.js' %}"></script>
+    <script src="{% static 'compiler.3.2.min.js' %}"></script>
+    <script src="{% static 'jquery-ui.custom.min.js' %}"></script>
+    <script src="{% static 'app.js' %}"></script>
+  </body>
+</html>
